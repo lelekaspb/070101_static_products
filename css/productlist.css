@@ -33,6 +33,10 @@ article > p {
   font-weight: 700;
 }
 
+article div {
+  margin-top: auto;
+}
+
 article > * {
   margin-top: 0.6rem;
 }
