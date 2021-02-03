@@ -40,10 +40,11 @@ section {
 
   section {
     font-size: 1.5rem;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(
       auto-fill,
-      minmax(400px, 1fr)
+      minmax(350px, 1fr)
     ); /* Keep adding new columns - even if theres is no content for them. content does not always take up full width */
     /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/ /* Don't add more columns than theres is content for. && +content "always" take full width */
     grid-gap: 1rem;
