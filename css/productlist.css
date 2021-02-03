@@ -1,0 +1,49 @@
+body {
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr 0.2fr;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+  gap: 2rem;
+  margin: 2rem;
+}
+
+main ol {
+  grid-column: 1/-1;
+}
+
+article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+
+article > p {
+  font-weight: 700;
+}
+
+article > * {
+  margin-top: 0.6rem;
+}
+
+article span {
+  white-space: normal;
+  margin: 0;
+}
+
+.on_sale .price {
+  text-decoration: line-through;
+}
+
+.sale_price {
+  font-size: 1.6rem;
+  color: red;
+}
