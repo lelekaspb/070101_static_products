@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-/* html {
-  font-size: calc(18px + ((100vw - 600px) / 250));
-} */
-
 body {
   display: grid;
   /* grid-template-columns: 1fr;
@@ -57,7 +53,8 @@ ul {
 }
 
 .heart_nav,
-.bag_nav {
+.bag_nav,
+.ham {
   height: 2rem;
   width: auto;
 }
@@ -88,8 +85,59 @@ ul a:hover {
   background-color: lightgrey;
 }
 
+.ham {
+  margin: 1rem;
+  display: none;
+}
+
 nav {
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 850px) {
+  .ham {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+#ham_menu {
+}
+
+#ham_menu a {
+  margin: 1rem 0;
+  color: black;
+}
+
+#ham_menu a:hover {
+  color: white;
+}
+
+.btn_close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.ham_menu_close {
+  display: none;
+}
+
+.ham_menu_open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: darkgray;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
 
 /* main section styles */

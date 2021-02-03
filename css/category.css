@@ -1,3 +1,8 @@
+body {
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr 200px;
+}
+
 main {
   margin: 2rem;
   min-height: 60vh;
