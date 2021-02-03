@@ -5,7 +5,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
   margin: 2rem;
 }
@@ -24,6 +24,7 @@ article {
   display: flex;
   flex-direction: column;
   font-size: 1.4rem;
+  padding: 1rem;
 }
 
 article > p {
@@ -34,11 +35,6 @@ article > * {
   margin-top: 0.6rem;
 }
 
-article span {
-  white-space: normal;
-  margin: 0;
-}
-
 .on_sale .price {
   text-decoration: line-through;
 }
@@ -46,4 +42,17 @@ article span {
 .sale_price {
   font-size: 1.6rem;
   color: red;
+}
+
+.sold_out::before {
+  content: "Sold Out";
+  position: absolute;
+  background-color: #272727;
+  color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.sold_out img {
+  opacity: 0.5;
 }
