@@ -1,0 +1,51 @@
+main {
+  margin: 2rem;
+  min-height: 60vh;
+}
+
+.category_link {
+  /* display: inline-block; */
+  border-bottom: 1px solid lightgrey;
+  margin: 1rem;
+  transition: background-color 0.5s;
+}
+
+.category_link > div {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.category_link:hover {
+  background-color: lightgrey;
+}
+
+/* just for the fallback layout */
+section {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* for browsers that support grid */
+@supports (display: grid) {
+  section {
+    max-width: none;
+    margin: 0;
+  }
+
+  section {
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(600px, 1fr)
+    ); /* Keep adding new columns - even if theres is no content for them. content does not always take up full width */
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/ /* Don't add more columns than theres is content for. && +content "always" take full width */
+    grid-gap: 1rem;
+  }
+
+  section > h2 {
+    grid-column: 1/-1;
+    margin: 3rem 1rem 1rem 1rem;
+  }
+}
