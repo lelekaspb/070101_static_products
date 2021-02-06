@@ -52,7 +52,7 @@ article p {
   }
 }
 
-.on_sale .price {
+.on_sale .original_price {
   text-decoration: line-through;
 }
 
@@ -64,10 +64,12 @@ article p {
 .sold_out::before {
   content: "Sold Out";
   position: absolute;
+  left: 4rem;
   background-color: #272727;
   color: white;
-  padding: 1rem;
+  padding: 2rem 3rem;
   margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 .sold_out img {
