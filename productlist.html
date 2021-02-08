@@ -48,21 +48,23 @@
         <li><a href="category.html">Categories</a> /&nbsp</li>
         <li><a href="#">Apparel</a></li>
       </ol>
-      <article>
-        <a href="product.html">
-          <img
-            src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
-            alt="product image"
-          />
-        </a>
-        <p>Sahara Team India Fanwear Round Neck Jersey</p>
-        <div>
-          <span class="price"><span>895</span> dkk</span>
-          <span class="sale_price">&nbsp;</span>
-        </div>
-      </article>
+      <template id="smallProductTemplate">
+        <article>
+          <a href="product.html">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
+              alt="product image"
+            />
+          </a>
+          <p>Sahara Team India Fanwear Round Neck Jersey</p>
+          <div>
+            <span class="price"><span>&nbsp; 895</span> dkk</span>
+            <span class="sale_price">&nbsp;</span>
+          </div>
+        </article>
+      </template>
 
-      <article class="sold_out on_sale">
+      <!-- <article class="sold_out on_sale">
         <a href="product.html">
           <img
             src="https://kea-alt-del.dk/t7/images/webp/1000/1164.webp"
@@ -116,7 +118,7 @@
           <span class="price"><span> 1899</span> dkk</span>
           <span class="sale_price">&nbsp </span>
         </div>
-      </article>
+      </article> -->
     </main>
 
     <footer>
@@ -124,5 +126,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/productlist.js"></script>
   </body>
 </html>
