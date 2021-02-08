@@ -27,6 +27,7 @@ article {
   padding: 1rem;
   border: 1px solid darkgray;
   border-radius: 15px;
+  box-shadow: 0 5px 5px #666c7d;
 }
 
 article > p {
