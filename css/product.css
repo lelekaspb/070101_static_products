@@ -96,3 +96,20 @@ button {
 button:hover {
   color: black;
 }
+
+
+
+
+/* 
+for the home page */
+.start {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+.start>a {
+  text-decoration: underline;
+}
+
+.start>a:hover {
+  color: lightgrey;
+}
