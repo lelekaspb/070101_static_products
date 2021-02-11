@@ -1,5 +1,9 @@
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+console.log(category);
+
 // https://kea-alt-del.dk/t7/api/products
-const url = "https://kea-alt-del.dk/t7/api/products";
+const url = "https://kea-alt-del.dk/t7/api/products?category="+ category;
 
 fetch(url)
   .then((res) => res.json())
@@ -11,7 +15,7 @@ fetch(url)
   }
 
   function showProduct(product) {
-    console.log(product);
+    //console.log(product);
     //grab the template
     const myTemplate = document.querySelector("#smallProductTemplate").content;
 
@@ -42,3 +46,5 @@ fetch(url)
     //append
     daddy.appendChild(myClone);
   }
+
+  document.querySelector("a.last_crumb").textContent = category;

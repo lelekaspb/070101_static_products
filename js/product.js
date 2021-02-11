@@ -1,5 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
+const category = urlParams.get("category");
 console.log(id);
 
 const url = "https://kea-alt-del.dk/t7/api/products/"+id;
@@ -11,7 +12,9 @@ fetch(url)
 // populate the page
 
 function showProduct(product) {
-  console.log(product);
+  console.log(product);  
+  document.querySelector("ol a.category").textContent = product.category;
+  document.querySelector("ol a.category").href = "productlist.html?category="+ product.category;
   document.querySelector(".brand").textContent = product.brandname;
   document.querySelector("article .articletype").textContent =
     product.articletype;
@@ -38,3 +41,4 @@ function showProduct(product) {
     document.querySelector("section").classList.add("sold_out");
   }
 }
+
