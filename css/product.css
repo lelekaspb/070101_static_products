@@ -9,7 +9,7 @@ main {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: calc(1.5rem + 1vw);
 }
 
 section img {
@@ -26,7 +26,8 @@ section {
 article {
   display: flex;
   flex-direction: column;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
+  font-size: calc(0.9rem + 1vw);
   padding-top: 3rem;
   margin-left: 2rem;
 }
@@ -54,10 +55,12 @@ article p {
 
 .on_sale .original_price {
   text-decoration: line-through;
+  color: #61605f;
 }
 
 .sale_price {
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
+  font-size: calc(1rem + 1vw);
   color: red;
 }
 
@@ -97,19 +100,16 @@ button:hover {
   color: black;
 }
 
-
-
-
 /* 
 for the home page */
 .start {
   font-size: 1.5rem;
   margin: 2rem 0;
 }
-.start>a {
+.start > a {
   text-decoration: underline;
 }
 
-.start>a:hover {
+.start > a:hover {
   color: lightgrey;
 }
