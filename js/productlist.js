@@ -24,7 +24,7 @@ fetch(url)
 
     //change content    
     myClone.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
-    myClone.querySelector("p").textContent = product.productdisplayname;
+    myClone.querySelector("h3").textContent = product.productdisplayname;
     myClone.querySelector(".price span").textContent = product.price;
     myClone.querySelector("article > a").href = `product.html?id=${product.id}`;
     

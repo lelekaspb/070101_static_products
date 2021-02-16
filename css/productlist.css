@@ -30,8 +30,9 @@ article {
   box-shadow: 0 5px 5px #666c7d;
 }
 
-article > p {
-  font-weight: 700;
+article > h3 {
+  font-weight: 400;
+  color: #61605f;
 }
 
 article div {
@@ -42,13 +43,18 @@ article > * {
   margin-top: 0.6rem;
 }
 
+.price {
+  color: #61605f;
+  font-size: smaller;
+}
+
 .on_sale .price {
   text-decoration: line-through;
 }
 
 .sale_price {
-  font-size: 1.6rem;
-  color: red;
+  font-size: 1.4rem;
+  color: #db3923;
 }
 
 .sold_out::before {
