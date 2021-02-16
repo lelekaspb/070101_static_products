@@ -30,7 +30,7 @@ article {
   box-shadow: 0 5px 5px #666c7d;
 }
 
-article > h3 {
+article > h4 {
   font-weight: 400;
   color: #61605f;
   font-size: calc(1.1rem + 1vw);
